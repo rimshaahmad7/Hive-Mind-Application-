@@ -5,24 +5,25 @@ const signupBtn = document.getElementById("sign_up_btn");
 function attemptLogin() {
  
   // Get input values
-  var login_uname = document.getElementById('login_uname').value;
-  var login_psw = document.getElementById('login_psw').value;
+  // var login_uname = document.getElementById('login_uname').value;
+  // var login_psw = document.getElementById('login_psw').value;
 
-  localStorage.setItem('storedUsername', login_uname);
-  localStorage.setItem('storedPassword', login_psw);
-  alert('The data is stored in localstorage')
+  // localStorage.setItem('storedUsername', login_uname);
+  // localStorage.setItem('storedPassword', login_psw);
+  // alert('The data is stored in localstorage')
   // Retrieve stored password for the given username
-  var storedUsername = localStorage.getItem('login_uname');
-  var storedPassword = localStorage.getItem('login_psw');
-alert('The data is retrieved from the localstorage')
+//   var storedUsername = localStorage.getItem('login_uname');
+//   var storedPassword = localStorage.getItem('login_psw');
+// alert('The data is retrieved from the localstorage')
   // Check if the stored password matches the entered password
-  if ( login_uname != storedUsername && login_psw != storedPassword) {   
-    alert('Login successful!');
+  // if ( login_uname != storedUsername && login_psw != storedPassword) {   
+  //   alert('Login successful!');
     // Redirect to the dashboard page (replace 'dashboard.html' with your actual dashboard page)
-    window.location.assign("dashboard.html");
-  } else {
-    alert('Login Failed.');
-  }
+    // preventDefault();
+    // window.location.assign("dashboard.html");
+  // } else {
+  //   alert('Login Failed.');
+  // }
 }
 
 // Function to attempt signup
