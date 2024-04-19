@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="game.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container1">
+      <div class="card" data-tilt data-tilt-scale="1.1">
+        <div class="card-image1"></div>
+        <div class="card-text">
+          <span class="date">Let's Start !!</span>
+          <h2>Quiz</h2>
+          <p>
+            Welcome to this esteemed platform where brilliance collides with
+            knowledge. Questions will unleash quests, answers will spark
+            applause, and minds will engage in an unparalleled intellectual
+            duel.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="container2">
+      <div class="card" data-tilt data-tilt-scale="1.1">
+        <div class="card-image2"></div>
+        <div class="card-text">
+          <span class="date">Let's Start !!</span>
+          <h2>Rock Paper Scissor</h2>
+          <p>
+            Our Childhood hand game rock-paper-scissors is a game played by us
+            to enjoy our time. The earliest form of "rock paper scissors"-style
+            game originated in China and was subsequently imported into Japan,
+            where it reached its modern standardized form.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="container3">
+      <div class="card" data-tilt data-tilt-scale="1.1">
+        <div class="card-image3"></div>
+        <div class="card-text">
+          <span class="date">Let's Start !!</span>
+          <h2>Game Three</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae
+            temporibus omnis illum maxime quod deserunt eligendi dolor
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".card"), {
+        glare: true,
+        reverse: true,
+        "max-glare": 0.5,
+        max: 25,
+        speed: 5000,
+      });
+
+      //It also supports NodeList
+      VanillaTilt.init(document.querySelectorAll(".card"));
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get the card container element
+        var container1 = document.getElementById("container1");
+
+        // Add event listener to the card container
+        container1.addEventListener("click", function () {
+          // Redirect to another page
+          window.location.href = "QUIZZ.1/home.html";
+        });
+      });
+    
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get the card container element
+        var container2 = document.getElementById("container2");
+
+        // Add event listener to the card container
+        container2.addEventListener("click", function () {
+          // Redirect to another page
+          window.location.href = "RPS/index.html";
+        });
+      });
+    
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get the card container element
+        var container3 = document.getElementById("container3");
+
+        // Add event listener to the card container
+        container3.addEventListener("click", function () {
+          // Redirect to another page
+          window.location.href = "index.html";
+        });
+      });
+    </script>
+  </body>
+</html>
