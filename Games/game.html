@@ -50,6 +50,10 @@
         </div>
       </div>
     </div>
+    <button onclick="dashboard()" >
+      Close
+    </button>
+    
     <script type="text/javascript" src="vanilla-tilt.min.js"></script>
     <script type="text/javascript">
       VanillaTilt.init(document.querySelector(".card"), {
@@ -96,6 +100,13 @@
           window.location.href = "index.html";
         });
       });
+    </script>
+    <script>
+      // Function to redirect to another page
+function dashboard() {
+  // Change the URL to the desired page
+  window.location.href = "../dashboard.html";
+}
     </script>
   </body>
 </html>
