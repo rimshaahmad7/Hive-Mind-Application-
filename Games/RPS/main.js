@@ -380,3 +380,9 @@ function chose(n) {
     setTimeout(() => gameplay(), 2000);
 }
 
+      // Function to redirect to another page
+function game() {
+  // Change the URL to the desired page
+  window.location.href = "../game.html";
+}
+
