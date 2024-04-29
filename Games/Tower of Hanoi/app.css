@@ -1,3 +1,101 @@
+/* Global Styles */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+.container{
+    
+    height: 80px;
+    margin-bottom: 740px;
+    width: 1300px;
+    background-color: black;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    
+}
+p1 {
+   
+  left: 34%;
+  font-size: 50px;
+  font-family: calibri;
+  letter-spacing: 4px;
+  color: #fff;
+
+}
+:root {
+  --font: calibri;
+  --colr-pri: #0ebac5;
+}
+
+.section {
+  display:flex;
+  grid-template-columns: repeat(1 1fr);
+  place-items: center;
+  height: 100vh;
+  margin-top: 185px;
+}
+
+p {
+    position: absolute;
+    left: 34%;
+    font-size: 20px;
+    font-family: calibri;
+    letter-spacing: 3px;
+    color: #fff;
+    top: 2em;
+  }
+
+.btn1 {
+  background: var(--colr-pri);
+  text-decoration: none;
+  display: flex;
+  border: none;
+  padding: 0 2.5em;
+  line-height: 40px;
+  border-radius: 10px;
+  letter-spacing: 0.15em;
+  font-weight: 400;
+  font-size: 2em;
+  user-select: none;
+  cursor: pointer;
+  color: #fff;
+  position: relative;
+  margin: 1.5em 0;
+  transition: all 0.5s, ease;
+}
+#exit {
+  padding-left: 5em;
+}
+
+.btn1::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  position: absolute;
+  background-color: transparent;
+  border-radius: 10px;
+  transition: all 1s ease;
+}
+
+.btn1 {
+  background-color: transparent;
+  outline: 2px solid var(--colr-pri);
+}
+
+.btn1:hover::before {
+  box-shadow: 0 0 15px 5px var(--colr-pri);
+}
+
+/*<===================Start Button================>*/
+
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 
 :root {
@@ -8,6 +106,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+
+  
 }
 
 html,
@@ -23,6 +123,9 @@ body {
   justify-content: center;
   align-items: center;
   background: black;
+  background-image: url(bg1.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .glowing-btn {
@@ -36,8 +139,10 @@ body {
   perspective: 2em;
   font-family: "Raleway", sans-serif;
   font-size: 2em;
+  width: 14em;
   font-weight: 900;
   letter-spacing: 1em;
+  
 
   -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
     0px 0px 0.5em 0px var(--glow-color);
@@ -49,6 +154,7 @@ body {
 }
 
 .glowing-txt {
+  margin-left: 2.5em;
   float: left;
   margin-right: -0.8em;
   -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
@@ -216,7 +322,8 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  .glowing-btn{
-    font-size: 1em;
+  .glowing-btn,
+  .btn1 {
+    font-size: 1.5em;
   }
 }
