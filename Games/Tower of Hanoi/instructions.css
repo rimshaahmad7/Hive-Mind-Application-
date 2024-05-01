@@ -2,6 +2,8 @@ body {
   background-color: black;
   background-image: url(bg1.jpg);
   background-size: cover;
+  background-position: absolute;
+  background-repeat: no-repeat;
 }
 
 .instructions {
@@ -62,7 +64,7 @@ body {
   font-family: "Oswald", sans-serif;
   letter-spacing: 1.5px;
   display: flex;
-  justify2-ontent: center;
+  justify-content: center;
   align-items: center;
   color: white;
   font-weight: bold;

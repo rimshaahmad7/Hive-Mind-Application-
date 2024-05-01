@@ -1,44 +1,39 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 body {
-  
   font-family: Arial, Helvetica, sans-serif;
-  background-color:black;
+  background-color: black;
   background-image: url("../images/bg1.png");
-  background-size:35%;
+  background-size: 35%;
   background-repeat: no-repeat;
   background-position: 75%;
-  background-position-y:95% ;
+  background-position-y: 95%;
   padding: 20px;
   /* display: block; */
   /* margin-top: 20%; */
 }
 
-#main{
-    
-    max-width: 500px;
-    margin-top:7%;
-    margin-left: 5%;
-    padding: 20px;
-    background-color:black;
-    display:inline-block;
-    justify-content: center;
+#main {
+  max-width: 500px;
+  margin-top: 7%;
+  margin-left: 5%;
+  padding: 20px;
+  background-color: black;
+  display: inline-block;
+  justify-content: center;
 
   /* border: 4px solid black; */
-    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
- 
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
 }
 
 h2 {
-  font-weight: bold; 
+  font-weight: bold;
   font-size: 45px;
-  color:black;
-  
+  color: black;
 }
-
 
 /* Full-width input fields */
 input[type="text"],
@@ -123,7 +118,6 @@ img.avatar {
   padding-bottom: 65px;
   padding-left: 25px;
   padding-right: 25px;
-  
 }
 
 span.psw {
@@ -144,7 +138,6 @@ span.psw {
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
   padding-top: 60px;
-  
 }
 
 /* Modal Content/Box */
@@ -200,47 +193,47 @@ span.psw {
   span.psw {
     display: block;
     float: none;
-    
   }
-  .cancelbtn,.signupbtn  {
+  .cancelbtn,
+  .signupbtn {
     width: 100%;
   }
   h2 {
-      float:left;
-      width:50%;
+    float: left;
+    width: 50%;
   }
 }
 
 /* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
-float: left;
-width: 50%;
+.cancelbtn,
+.signupbtn {
+  float: left;
+  width: 50%;
 }
 
 /* The Modal (background) */
 .modal2 {
-display: none; /* Hidden by default */
-position: fixed; /* Stay in place */
-z-index: 1; /* Sit on top */
-left: 0;
-top: 0;
-width: 100%; /* Full width */
-height: 100%; /* Full height */
-overflow: auto; /* Enable scroll if needed */
-background-color: #474e5d;
-padding-top: 50px;
-
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
 }
 
 /* Style the horizontal ruler */
 hr {
-border: 1px solid #f1f1f1;
-margin-bottom: 25px;
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
 }
 
 /* Clear floats */
 .clearfix::after {
-content: "";
-clear: both;
-display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
