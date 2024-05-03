@@ -59,7 +59,6 @@
             placeholder="Enter Username"
             name="sign_up_uname"
             id="newUsername"
-            onkeyup="validateSignup()"
             required
           />
           <label for="sign_up_email"><b>Email</b></label>
@@ -74,7 +73,6 @@
             placeholder="Enter Email"
             name="sign_up_email"
             id="newEmail"
-            onkeyup="validateSignup()"
             required
           />
           <label for="sign_up_psw"><b>Password</b></label>
@@ -89,7 +87,6 @@
             placeholder="Enter Password"
             name="sign_up_psw"
             id="newPassword"
-            onkeyup="validateSignup()"
             required
           />
 
@@ -105,7 +102,6 @@
             placeholder="Repeat Password"
             name="psw-repeat"
             id="repeatPassword"
-            onkeyup="validateSignup()"
             required
           />
 
@@ -128,7 +124,8 @@
               style="opacity: 0.9"
               type="submit"
               class="signupbtn"
-              id="sign_up_btn"
+              id="sign_up_btn" 
+              onclick="auth_1(event)"
             >
               Sign Up
             </button>
@@ -181,8 +178,8 @@
           <a
             type="submit"
             id="login_btn"
-            href="dashboard.html"
-            onclick="preventDefault()"
+            onclick="auth(event)"
+            disabled
             >Login</a
           >
           <label>
