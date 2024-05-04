@@ -1,0 +1,213 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: calibri;
+  }
+  
+  body {
+    background-image: url(bg1.jpg);
+    background-size: cover;
+    background-position: absolute;
+    background-repeat: no-repeat;
+  }
+  
+  #debug {
+    display: none;
+    margin: 5em 0 0 5em;
+  }
+  
+  #debug * {
+    padding: 0.1em;
+  }
+  
+  .btn {
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(
+      100% 100% at 100% 0,
+      #5adaff 0,
+      #5468ff 100%
+    );
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+      rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow 0.15s, transform 0.15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+  }
+  
+  .btn:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+      rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  }
+  
+  .btn:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+      rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-5px);
+  }
+  
+  .btn:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+  
+  #introduction,
+  #victory-notification {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #introduction-message,
+  #victory-message {
+    background-color: rgba(22, 155, 208, 0.149);
+    border-radius: 50%;
+  }
+  
+  #introduction-message {
+    padding: 2em;
+    width: 30em;
+    font-size: 20px;
+    font-family: calibri;
+    letter-spacing: 1px;
+  
+    color: rgb(227, 154, 65);
+    /* TODO: remove hardcoded value for margin-top. */
+    margin: 420px auto 0 auto;
+  }
+  
+  #introduction-message > p {
+    margin-top: 0.4em;
+    margin-bottom: 1.3em;
+    text-align: center;
+    color: bisque;
+  }
+  
+  #canvas {
+    margin-top: 70px;
+  }
+  
+  #victory-notification {
+    display: none;
+  }
+  
+  #victory-message {
+    margin: 30% auto 0 auto;
+    width: 25em;
+    padding: 1em;
+    font-size: 20px;
+    font-family: calibri;
+    letter-spacing: 1px;
+  }
+  
+  #victory-message > h1 {
+    text-align: center;
+    color: rgb(227, 154, 65);
+  }
+  
+  #victory-message > p {
+    padding-top: 1.4em;
+    text-align: center;
+    color: bisque;
+  }
+  
+  input {
+    border: solid 2px #36a4ac;
+    background-color: #dedede;
+    padding: 0.2em;
+    height: 20px;
+  }
+  
+  @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+  
+  html, body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 0;
+  }
+  
+  /* body {
+    background: #8A2387;
+    background: linear-gradient(to right, #F27121, #E94057, #8A2387);
+    position: relative;
+    text-align: center;
+  } */
+  
+  button {
+    background: none;
+    border: 0;
+    box-sizing: border-box;
+    color: transparent;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    left: 96%;
+    letter-spacing: 1.5px;
+    line-height: 20px;
+    outline: none;
+    overflow: hidden;
+    padding: 10px 0 0;
+    position: absolute;
+    text-transform: uppercase;
+    top: 6%;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s ease-in;
+    width: 100px;
+  }
+  
+  button::before,
+  button::after {
+    background-color: white;
+    content: '';
+    display: block;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    transform-origin: center left;
+    transition: all 0.2s ease-in;
+    width: 130.4214px;
+    z-index: -1;
+  }
+  
+  button::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  
+  button::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+  }
+  
+  button:hover {
+    color: #8A2387;
+  }
+  
+  button:hover::before,
+  button:hover::after {
+    height: 50px;
+    transform: rotate(0deg);
+  }
