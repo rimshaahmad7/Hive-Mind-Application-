@@ -28,6 +28,12 @@ function auth(event) {
 		alert("Your password must include atleast 8 characters");
 		return false;
 	}
+
+	else if (email != "user@gmail.com" || password != "12345678") {
+		alert("Please fill the correct credential");
+		return false;
+	}
+
 	else if (email === "user@gmail.com" && password === "12345678") {
 		alert("Successfully logged in");
     window.location.replace("dashboard.html");
