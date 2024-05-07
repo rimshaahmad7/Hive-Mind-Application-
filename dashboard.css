@@ -57,6 +57,19 @@ html {
    font-size: 12px;
 }
 
+/* nice scroll bar */
+::-webkit-scrollbar {
+   width: 8px;
+ }
+ ::-webkit-scrollbar-track {
+   background: rgba(212, 206, 206, 0.711);
+   border-radius: 50px;
+ }
+ ::-webkit-scrollbar-thumb {
+   background: rgb(110, 83, 228);
+   border-radius: 50px;
+ }
+
 body {
    width: 100vw;
    height: 100vh;
@@ -815,7 +828,7 @@ img {
    flex-direction: column;
    background-image: linear-gradient(to right, #a8c0ff, #3f2b96);
    position: sticky;
-   box-shadow: 0 0 30px #716c0c;
+   box-shadow: 0 0 30px #4a4941;
 }
 
 .contact {
@@ -1114,7 +1127,7 @@ img {
 }
 
 .new_footer_area {
-   background: #d8d8d8;
+   background: #ffffff;
 }
 
 
